@@ -1,62 +1,37 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
-		<title></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<meta name="mobile-web-app-capable" content="yes" />
-		<style type="text/css" title="Default">
-			/* fullscreen */
-			html {
-				height:100%;
-			}
-			body {
-				height:100%;
-				margin: 0px;
-				overflow:hidden; /* disable scrollbars */
-				-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* remove highlight on tab for iOS/Android */
-			}
-			/* fix for scroll bars on webkit & >=Mac OS X Lion */ 
-			::-webkit-scrollbar {
-				background-color: rgba(0,0,0,0.5);
-				width: 0.75em;
-			}
-			::-webkit-scrollbar-thumb {
-    			background-color:  rgba(255,255,255,0.5);
-			}
-		</style>	
-	</head>
-	<body>
-<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
-		<script type="text/javascript" src="pano2vr_player.js">
-		</script>
-		<script type="text/javascript" src="skin.js">
-		</script>
-		<script src="webxr/three.min.js"></script>
-		<script src="webxr/webxr-polyfill.min.js"></script>
-		<div id="container" style="width:100%;height:100%;overflow:hidden;">
-		<br>Loading...<br><br>
-		</div>
-		<script type="text/javascript">
-	
-			// create the panorama player with the container
-			pano=new pano2vrPlayer("container");
-			// add the skin object
-			skin=new pano2vrSkin(pano);
-			// load the configuration
-		
-			window.addEventListener("load", function() {
-				pano.readConfigUrlAsync("pano.xml");
-			});
-		</script>
-		<noscript>
-			<p><b>Please enable Javascript!</b></p>
-		</noscript>
-<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - --> 
-		<!-- Hack needed to hide the url bar on iOS 9, iPhone 5s --> 
-		<div style="width:1px;height:1px;"></div>
-	</body>
-</html>
+## Welcome to GitHub Pages
+
+You can use the [editor on GitHub](https://github.com/Bunthen/cmedpanovr.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Bunthen/cmedpanovr.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
